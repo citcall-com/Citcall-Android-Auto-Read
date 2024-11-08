@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CitcallAutoReadDemo"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".SuccessActivity"
+            android:exported="false"
+            android:theme="@style/Theme.App.SplashScreen"/>
+        <activity
+            android:name=".NoPermissionActivity"
+            android:exported="true"
+            android:theme="@style/Theme.App.SplashScreen" />
+        <activity
+            android:name=".PhoneNumberActivity"
+            android:exported="true"
+            android:theme="@style/Theme.App.SplashScreen" />
+        <activity
+            android:name=".OtpActivity"
+            android:exported="true"
+            android:theme="@style/Theme.App.SplashScreen" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.App.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".MyBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <!-- <action android:name="android.intent.action.last_four_digit"/> -->
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

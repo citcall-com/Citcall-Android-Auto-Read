@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Citcall Auto Read Demo</string>
+    <string name="text_welcome">Welcome, this app is demo for Citcall auto read miscall OTP.</string>
+    <string name="text_input_phone_number">Enter your phone number to verify</string>
+    <string name="hint_edittext">628xxxx</string>
+    <string name="btn_begin">Begin</string>
+    <string name="btn_verify">Verify!</string>
+    <string name="btn_try_again">Try Again!</string>
+
+    <string name="yes">Yes</string>
+
+    <string name="request_call_log_title">Need Permission</string>
+    <string name="request_call_log_description">This app need permission to Read Call Log</string>
+    <string name="citcall_logo_description">Citcall Logo</string>
+    <string name="permission_required_title">Permission Required</string>
+    <string name="permission_required_description">This app required permission to make sure auto read miscall works</string>
+    <string name="complete_the_last_4_digits">Complete the last 4 digits</string>
+    <string name="success">Success</string>
+    <string name="number_validated">Your Number was Validated</string>
+    <string name="btn_exit">Exit</string>
+    <string name="req_otp_description">You will be miscalled by miscalled by our system, this app will autofill last 4 digits OTP.</string>
+</resources>
